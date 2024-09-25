@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&display=swap ');
+
+
 :root{
     --azul_claro: rgb(0, 172, 230);
     --amarelo_canario: rgb(255, 187, 0);
@@ -9,15 +12,18 @@
 
 body{
     margin: 0px;
+    font-family: 'Marhey',Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(./Imagens/nuvem.png);
 }
 
 #menu_topo{
-    width: 100%;
     height: 80px;
     background-color: var(--azul_claro);
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
 }
 
 #logo_branco{
@@ -34,10 +40,86 @@ body{
 }
 
 .item_menu{
-    background-color: var(--vermelho);
     margin-right: 10px;
     display: flex;
     align-items: center;
     padding: 20px;
     border-radius: 40px 0px 40px 40px;
+    height: 38px;
+}
+
+.item_menu:hover{
+    background-color: var(--amarelo_canario);
+}
+
+.menu_ativado{
+    background-color: var(--vermelho);
+}
+
+#criancas{
+    width: 100%;
+}
+
+#banner{
+    color: white;
+    background-image: url('./Imagens/criancas.jpg');
+    width: 100%;
+    height: 50vw;
+    background-size: cover ;
+    display: flex;
+    align-items: center;
+}
+
+#mensagem{
+    background-color: rgba(0,173, 230, 0.6);
+    width: 650px;
+    height: 260px;
+    margin-left: 25%;
+    border-radius: 40px 10px 40px 10px;
+    text-align: center;
+    padding: 35px;
+    color: white;
+}
+
+#mensagem h1{
+    font-size: 50px;
+    line-height: 50px;
+}
+
+#mensagem p{
+    font-size: 20px;
+    
+}
+
+#container{
+    text-align: center;
+}
+
+#menu_2{
+    display: flex;
+    margin-top: 40px;
+    margin: 50px;
+
+}
+
+#crianca2{
+    width: 450px;
+    height: 450px;
+    border-radius: 50px 50px 50px 50px;
+    margin-left: 100px;
+}
+
+#conteudo{
+    margin-top: 50px;
+    margin-left: 50px;
+    text-align: left;
+}
+
+#menu_3{
+    display: flex;
+    align-items: center;
+}
+
+#meninas{
+    background-image: url(./Imagens/criancas3.jpg);
 }
