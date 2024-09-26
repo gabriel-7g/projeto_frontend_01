@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&display=swap ');
 
+@import url('https://cdn-uicons.flaticon.com/2.5.0/uicons-bold-rounded/css/uicons-bold-rounded.css');
+
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css');
+
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css');
+
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css');
 
 :root{
     --azul_claro: rgb(0, 172, 230);
     --amarelo_canario: rgb(255, 187, 0);
     --verde-limao: rgb(0, 202, 0);
     --preto: rgb(0, 0, 0);
-    --branco: rgb(255, 255, 25);
+    --branco: rgb(255, 255, 255);
     --vermelho: rgb(255, 0, 0);
 }
 
@@ -27,8 +34,8 @@ body{
 }
 
 #logo_branco{
-    width: 25%;
-    height: 80%;
+    width: 300px;
+    height: 70px;
     margin-left: 60px;
     margin-top: 5px;
 }
@@ -44,6 +51,7 @@ body{
     display: flex;
     align-items: center;
     padding: 20px;
+    padding-top: 10px;
     border-radius: 40px 0px 40px 40px;
     height: 38px;
 }
@@ -74,7 +82,7 @@ body{
     background-color: rgba(0,173, 230, 0.6);
     width: 650px;
     height: 260px;
-    margin-left: 25%;
+    margin: auto;
     border-radius: 40px 10px 40px 10px;
     text-align: center;
     padding: 35px;
@@ -95,7 +103,7 @@ body{
     text-align: center;
 }
 
-#menu_2{
+#menu_2, #menu_3{
     display: flex;
     margin-top: 40px;
     margin: 50px;
@@ -103,10 +111,11 @@ body{
 }
 
 #crianca2{
+    background-image: url(./Imagens/criancas2.jpg);
     width: 450px;
-    height: 450px;
+    height: 350px;
     border-radius: 50px 50px 50px 50px;
-    margin-left: 100px;
+    background-size: cover;
 }
 
 #conteudo{
@@ -115,11 +124,123 @@ body{
     text-align: left;
 }
 
-#menu_3{
-    display: flex;
-    align-items: center;
+#criancas_02{
+    background-image: url(./Imagens/criancas3.jpg);
+    width: 60%;
+    height: 350px;
+    background-size: cover;
+    border-radius: 40px 0px 0px 40px;
 }
 
-#meninas{
-    background-image: url(./Imagens/criancas3.jpg);
+#conteudo_2{
+    background-color: var(--verde-limao);
+    width: 40%;
+    height: 350px;
+    border-radius: 0px 40px 40px 0px;
+    font-size: 15px;
+    text-align: left;
+    color: white;
+}
+
+#conteudo_2 h1{
+    margin-left: 30px;
+    margin-top: 50px;
+    margin-right: 30px;
+}
+
+#conteudo_2 p{
+    font-size: 12px;
+    margin-left: 30px;
+    margin-top: 50px;
+    margin-right: 30px;
+}
+
+#menu_final{
+    background-color: var(--azul_claro);
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+.conteudo_rodape{
+    width: 33%;
+    height: 300px;
+    color: var(--branco);
+    text-align: left;
+    margin-top: 10px;
+}
+
+.icones{
+    font-size: 50px;
+    margin-right: 10px;
+}
+
+
+#coluna2{
+    margin-top: 50px;
+}
+
+#coluna3{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#coluna1 h1{
+    margin-top: -15px;
+}
+
+#coluna1 p{
+    font-size: 14px;
+}
+
+
+#copyright{
+    color: var(--branco);
+    min-width: 100%;
+}
+
+#copyright a{
+    color: var(--amarelo_canario);
+    text-decoration: none;
+}
+
+#coluna3 img{
+    width: 400px;
+}
+
+
+#menu_mobile_tablet{
+    background-color: red;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 30px;
+    font-size: 30px;
+    color: var(--branco);
+    display: none;
+}
+
+/* Configuração para Smarthphones */
+@media screen and (max-width: 480px){
+    #menu_mobile_tablet{
+        display: flex;
+    }
+    #menu_topo{
+        display: none;
+    }
+}
+
+/* Configuração para Tablets */
+@media screen and (min-width: 481px) and (max-width: 1024) {
+    #menu_mobile_tablet{
+        display: flex;
+    }
+    #menu_topo{
+        display: none;
+    }
 }
